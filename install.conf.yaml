@@ -1,0 +1,22 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- create:
+  - ~/downloads
+  - ~/.vim/undo-history
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
+- link:
+    # zsh shell section
+    ~/.zshrc: 
+      path: .zshrc
+      force: true
+    ~/.zprofile:
+      path: .zprofile
+      force: true
+    ~/.zsh_aliases: .zsh_aliases
