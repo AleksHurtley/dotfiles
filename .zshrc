@@ -12,3 +12,6 @@ fi
 if [ -f ~/.zsh_aliases ]; then 
     source ~/.zsh_aliases
 fi
+
+# export PATH="$PATH:/Users/aleksander.hurtley@schibsted.com/.pyenv/versions/2.7.18/"
+# PATH=/Users/aleksander.hurtley@schibsted.com/.pyenv/shims:$PATH
